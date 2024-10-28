@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Header</title>
+    <style>
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header th:fragment="header">
+        <img src="/images/cat.jpg" alt="Header Image" style="width:100%; height:auto;">
+        <nav>
+            <a href="/demoCategory/categories">Danh Sách Category</a>
+            <a href="/demoCategory/categories/new">Thêm Category Mới</a>
+        </nav>
+    </header>
+</body>
+</html>
+ 	
